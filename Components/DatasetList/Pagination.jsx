@@ -32,35 +32,36 @@ export default function Pagination({
 
       <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-sm text-gray-700">
         <span className="text-center sm:text-left">
-          Page {String(page).padStart(2, "0")} of {String(totalPages).padStart(2, "0")}
+          Page {String(page).padStart(2, "0")} of{" "}
+          {String(totalPages).padStart(2, "0")}
         </span>
 
         <div className="flex items-center justify-center gap-2 text-[#B17F3D]">
           <button
             onClick={() => onPageChange(1)}
             disabled={page === 1 || loading}
-            className="disabled:opacity-30 p-1"
+            className="disabled:opacity-30 p-1 cursor-pointer disabled:cursor-not-allowed"
           >
             <MdKeyboardDoubleArrowLeft size={22} />
           </button>
           <button
             onClick={() => onPageChange(page - 1)}
             disabled={page === 1 || loading}
-            className="disabled:opacity-30 p-1"
+            className="disabled:opacity-30 p-1 cursor-pointer disabled:cursor-not-allowed"
           >
             <GrFormPrevious size={22} />
           </button>
           <button
             onClick={() => onPageChange(page + 1)}
             disabled={page === totalPages || loading}
-            className="disabled:opacity-30 p-1"
+            className="disabled:opacity-30 p-1 cursor-pointer disabled:cursor-not-allowed"
           >
             <GrFormNext size={22} />
           </button>
           <button
             onClick={() => onPageChange(totalPages)}
             disabled={page === totalPages || loading}
-            className="disabled:opacity-30 p-1"
+            className="disabled:opacity-30 p-1 cursor-pointer disabled:cursor-not-allowed"
           >
             <MdKeyboardDoubleArrowRight size={22} />
           </button>
