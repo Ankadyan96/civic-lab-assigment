@@ -86,7 +86,15 @@ Redux/
 
 ---
 
+
+
+## 🔗 Deployed Link
+
+https://civic-lab-assigment.netlify.app/
+
 ## 🧑‍💻 Developed by
 
 Ankit Kadyan  
 Frontend Developer
+
+---
